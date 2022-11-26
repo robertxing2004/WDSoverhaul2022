@@ -13,9 +13,8 @@ body {
 header {
   position: fixed;
   top: 0;
-  margin: 0;
   padding-top: 25px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   width: 100%;
   background-image: linear-gradient(#000000, #00000000);
   text-align: center;
@@ -67,7 +66,7 @@ header {
 }
 
 .button:hover {
-  background-color: #de8b0f;
+  background-color: #c17a0f;
 }
 
 /*===== HOME  =====*/
@@ -168,11 +167,10 @@ header {
   padding-right: 5px;
 }
 
-/*===== FOOTER =====*/
-footer {
-  margin: 200px;
+/*===== MENU =====*/
+.menu {
+  margin-top: 200px;
 }
-
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -192,18 +190,20 @@ footer {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #c17a0f;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns:auto auto auto auto;
   padding: 10px;
 }
+
 .grid-item {
   background-color: #FF9F0D90;
   border: 1px solid rgba(0, 0, 0, 0.8); 
@@ -215,14 +215,17 @@ footer {
   left: 0;
   gap: 5px;
 }
+
 .menu_desc{
   font-size: 14px;
   font-weight: bold;
 }
+
 .menu_img {
   width: 180px; /* you can use % */
   height: auto;
 }
+
 /* Style the tab content */
 .tabcontent {
   display: block;
@@ -268,3 +271,39 @@ footer {
   color: orange;
   cursor: pointer;
 }
+
+/*===== FOOTER =====*/
+footer {
+  margin-top: 100px;
+  text-align: center;
+  background-image: linear-gradient(#00000000, #000000)
+}
+
+.footer__container {
+  margin-left: 200px;
+  margin-right: 200px;
+  columns: 3 auto;
+  text-align: left;
+}
+
+.footer__logo {
+  font-family: 'Abhaya Libre', serif;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.footer__title {
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.footer__subtitle {
+  margin: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
