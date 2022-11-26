@@ -108,6 +108,25 @@
 
             <!--========== MENU ==========-->
             <section class="menu section bd-container" id="menu">
+                <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openSection(event, 'Drinks')">Drinks</button>
+    <button class="tablinks" onclick="openSection(event, 'Snacks and Pastries')">Snacks and Pastries</button>
+    <button class="tablinks" onclick="openSection(event, 'Sandwiches and Salads')">Sandwiches and Salads</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+    <p>London is the capital city of England.</p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
                 <span class="section-subtitle">Special</span>
                 <h2 class="section-title">Menu of the week</h2>
 
@@ -136,18 +155,50 @@
                         <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                 </div>
-                
-                <button id="myBtn">modal</button>
+                <button id="myBtn">Place Order</button>
 
                 <div id="myModal" class="modal">
 
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Order</p>
-                    <input type= 'password' minlength="8"/>
-                    <input type = 'time'/>
-                    
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Order Summary</h2>
+                        <label for="orderInstructions">Order Instructions:</label>
+                        <textarea id="orderInstructions" rows="4" cols="30"></textarea></br>
+                        <label for="pickupTime">Time for pickup:</label>
+                        <input type="time"/>
+                        <h3>Subtotal: $</h3>
+                        <input type="submit" value="Checkout">
+
+                    </div>                    
                 </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+                    </script>
+
             </section>
 
             <!--===== APP =======-->
