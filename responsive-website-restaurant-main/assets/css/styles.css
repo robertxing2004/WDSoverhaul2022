@@ -155,19 +155,17 @@ header {
   height: 400px;
   vertical-align: middle;
   float: right;
-  border: 1px solid orange;
 }
 
 .row1__img {
   max-width: 100%;
-  padding-bottom: 3px;
-  padding-right:3px;
+  padding-right: 5px;
 }
 
 .row2__img {
   float: left;
-  max-width: 50%;
-  padding-right: 3px;
+  width: 49%;
+  padding-right: 5px;
 }
 
 /*===== FOOTER =====*/
