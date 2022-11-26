@@ -1,15 +1,27 @@
+/* set smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
 
-/*===== BODY =====*/
+
+
+/*========== BODY ==========*/
+
+
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color:#ffffff;
 }
 
-/*===== HEADER =====*/
+
+
+/*========== HEADER ==========*/
+
+
+
 header {
   position: fixed;
   top: 0;
@@ -33,6 +45,7 @@ header {
   text-align: left;
   padding-top: 10px;
   padding-left: 200px;
+  border: 1px solid orange;
 }
 
 .nav__item {
@@ -47,14 +60,36 @@ header {
   line-height: 24px;
   text-decoration: none;
   color: #ffffff;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .nav__link:hover {
   color: #FF9F0D;
 }
 
-/*===== BUTTONS =====*/
+button {
+  display: inline;
+  float: right;
+  padding-right: 200px;
+  background-color: #00000000;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  transition-duration: 0.3s;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #FF9F0D;
+}
+
+
+
+/*========== BUTTONS ==========*/
+
+
+
 .button {
   text-decoration: none;
   margin-top: 50px;
@@ -62,14 +97,19 @@ header {
   background-color: #FF9F0D;
   color: #ffffff;
   border-radius: 30px;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .button:hover {
   background-color: #c17a0f;
 }
 
-/*===== HOME  =====*/
+
+
+/*========== HOME  ==========*/
+
+
+
 .home {
   margin: 200px;
   margin-top: 150px;
@@ -107,12 +147,19 @@ header {
 
 .home__img {
   width: 500px;
+  border-radius: 50%;
   height: auto;
   vertical-align: middle;
   float: right;
 }
 
-/*===== ABOUT =====*/
+
+
+
+/*========== ABOUT ==========*/
+
+
+
 .about {
   margin: 200px;
 }
@@ -167,13 +214,21 @@ header {
   padding-right: 5px;
 }
 
-/*===== MENU =====*/
+
+
+/*========== MENU ==========*/
+
+
+
 .menu {
   margin-top: 200px;
 }
+
 /* Style the tab */
 .tab {
   overflow: hidden;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -183,37 +238,47 @@ header {
   outline: none;
   cursor: pointer;
   padding: 30px 100px;
+  height: 150px;
   width: 25%;
   transition: 0.3s;
-  background-color: #de8b0f;
+  text-align: center;
+  background-color: #FF9F0D;
+  color: #ffffff;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #c17a0f;
+  background-color: #db8b14;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #db8b14;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns:auto auto auto auto;
-  padding: 10px;
+  grid-template-columns:auto auto;
+  padding: 0;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .grid-item {
-  background-color: #FF9F0D90;
+  background-color: #db8b14;
   border: 1px solid rgba(0, 0, 0, 0.8); 
-  padding: 5px;
+  padding: 10px;
   font-size: 20px;
   text-align: center;
   display: inline-grid;
   grid-template-columns:auto auto;
   left: 0;
   gap: 5px;
+}
+
+.menu_name {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 25px;
 }
 
 .menu_desc{
@@ -229,10 +294,13 @@ header {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
   border: none;
   border-top: none;
 }
+
+
+
+/*========== ORDER MODAL ==========*/
 
 /* The Modal (background) */
 .modal {
@@ -271,16 +339,43 @@ header {
   cursor: pointer;
 }
 
-/* Contact Us Formatting */
+
+
+/*========== CONTACT US ==========*/
+
+
+
 .contact {
+  margin-top: 200px;
   margin-left: 200px;
+  margin-right: 200px;
+}
+
+.section-subtitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+  color: #FF9F0D;
+}
+
+.section-title {
+  font-family: 'Abhay Libre', serif;
+  font-size: 48px;
+}
+
+.contact__description {
+  padding-bottom: 40px;
 }
 
 .contact__button {
   margin-top: 35px;
 }
 
-/*===== FOOTER =====*/
+
+
+/*========== FOOTER ===========*/
+
+
+
 footer {
   margin-top: 100px;
   text-align: center;
