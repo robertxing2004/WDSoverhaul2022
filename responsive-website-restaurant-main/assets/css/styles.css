@@ -2,10 +2,6 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-image: url('assets/img/background.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   background: #000000;
   color:#ffffff;
 }
