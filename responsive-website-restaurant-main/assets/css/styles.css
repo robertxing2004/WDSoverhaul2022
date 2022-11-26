@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #000000;
   color:#ffffff;
 }
 
@@ -51,7 +50,7 @@ header {
   color: #FF9F0D;
 }
 
-/*===== MAIN PAGE =====*/
+/*===== HOME  =====*/
 .home {
   margin: 200px;
 }
