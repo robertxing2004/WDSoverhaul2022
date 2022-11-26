@@ -271,6 +271,15 @@ header {
   cursor: pointer;
 }
 
+/* Contact Us Formatting */
+.contact {
+  margin-left: 200px;
+}
+
+.contact__button {
+  margin-top: 35px;
+}
+
 /*===== FOOTER =====*/
 footer {
   margin-top: 100px;
