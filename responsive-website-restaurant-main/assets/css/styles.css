@@ -68,7 +68,7 @@ header {
 }
 
 /* this is the order button*/
-button {
+.nav button {
   float: right;
   justify-content: middle;
   margin-right: 200px;
@@ -82,7 +82,7 @@ button {
   border: none;
 }
 
-button:hover {
+.nav button:hover {
   cursor: pointer;
   color: #FF9F0D;
 }
