@@ -181,10 +181,11 @@ footer {
 /* Style the buttons that are used to open the tab content */
 .tab button {
   float: left;
-  border: none;
+  border: black solid 1px;
   outline: none;
   cursor: pointer;
   padding: 30px 100px;
+  width: 25%;
   transition: 0.3s;
   background-color: #de8b0f;
 }
@@ -202,7 +203,6 @@ footer {
   display: grid;
   grid-template-columns:auto auto auto auto;
   padding: 10px;
-  width: 95%;
 }
 .grid-item {
   background-color: #FF9F0D90;
