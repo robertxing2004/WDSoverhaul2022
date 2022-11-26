@@ -2,6 +2,10 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  background-image: url('assets/img/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   background: #000000;
   color:#ffffff;
 }
@@ -28,7 +32,7 @@ header {
   list-style-type: none;
   width: 100%;
   text-align: left;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-left: 200px;
 }
 
@@ -58,7 +62,6 @@ header {
 
 .home__title {
   font-family: 'Great Vibes', cursive;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
@@ -67,9 +70,15 @@ header {
 
 .home__subtitle {
   font-family: 'Abhaya Libre', serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 68px;
   color: #ffffff;
+}
+
+.home__text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
